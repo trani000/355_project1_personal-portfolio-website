@@ -1,0 +1,366 @@
+/* ===========================
+   general styles
+=========================== */
+
+:root {
+    --primary-purple: #5A2D82;
+    --dark-purple: #45225E;
+    --black: #333333;
+    --white: #FFFFFF;
+    --light-gray: #F7F7F7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===========================
+   navigation bar
+=========================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--white);
+}
+
+.logo h2 {
+    color: var(--primary-purple);
+    font-size: 32px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-purple);
+}
+
+.dark-mode {
+    font-size: 24px;
+    color: var(--primary-purple);
+    cursor: pointer;
+}
+
+/* ===========================
+   hero section
+=========================== */
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: 72px;
+    color: var(--primary-purple);
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+    color: gray;
+}
+
+/* ===========================
+   Welcome Section
+=========================== */
+
+.welcome {
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+/* ===========================
+   buttons
+=========================== */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.button {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--dark-purple);
+}
+
+/* ===========================
+   footer
+=========================== */
+
+.footer {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p:first-child {
+    font-weight: 600;
+}
+
+.footer p:last-child {
+    color: var(--primary-purple);
+    margin-top: 5px;
+}
+
+/* ===========================
+   responsive design
+=========================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .welcome {
+        width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* ===========================
+   projects page
+=========================== */
+
+.project-banner img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.projects-title {
+    text-align: center;
+    margin: 50px;
+}
+
+.projects-title h1 {
+    color: var(--primary-purple);
+    margin-bottom: 10px;
+}
+
+.project {
+    width: 75%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+.project h2 {
+    color: var(--primary-purple);
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   contact page
+=========================== */
+
+.contact-title {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.contact-title h1 {
+    color: var(--primary-purple);
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto 60px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: var(--dark-purple);
+}
+/* ===========================
+   dark mode
+=========================== */
+
+.dark-mode-on {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.dark-mode-on .navbar {
+    background-color: #2B2B2B;
+}
+
+.dark-mode-on .footer {
+    background-color: #2B2B2B;
+}
+
+.dark-mode-on .button {
+    background-color: var(--dark-purple);
+}
+
+.dark-mode-on .project {
+    background-color: #333333;
+}
+
+
+/* ===========================
+   about page
+=========================== */
+
+.about-header img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.about,
+.interests,
+.skills,
+.gallery {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.about h1,
+.interests h2,
+.skills h2,
+.gallery h2 {
+    color: var(--primary-purple);
+    margin-bottom: 15px;
+}
+
+.skills p {
+    font-size: 18px;
+}
+
+.carousel {
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+}

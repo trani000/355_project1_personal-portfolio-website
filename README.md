@@ -1,4 +1,6 @@
 # Personal Portfolio Website
+Tanha Rani 
+355
 
 ## Project Overview
 
@@ -71,10 +73,6 @@ Each page focuses on a different aspect of my portfolio while maintaining a cons
 
 Creative, clean, and professional.
 
-### Wireframe
-
-Attach your hand-drawn wireframe here before submitting.
-
 ---
 
 # Interaction / Functionality
@@ -104,10 +102,6 @@ Software Used
 ---
 
 # Timeline / Project Milestones
-
-Planning
-
-- Completed project proposal
 
 Development
 
@@ -150,7 +144,7 @@ The site will include these pages: Home, About Me, Projects, and Contact.
 Data Analyst
 
 9. What technologies or tools do you have experience with?
-I have experience with
+I have experience with Java, C++, SQL
 
 10. What achievements or experiences are worth highlighting?
 The projects that I've worked on are experiences worth highlighting.
@@ -233,11 +227,4 @@ Interactivity will make the experience more enjoyable and make users want to use
 # External Resources
 
 - https://fonts.google.com/
-- https://pages.github.com/
-- https://code.visualstudio.com/
-
----
-
-# Author
-
-Tanha Rani
+- https://web.dev/learn
